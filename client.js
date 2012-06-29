@@ -1,3 +1,4 @@
-channel.bind('deploy', function(code) {
-  eval(code);
+
+channel.bind('message', function(message) {
+  document.getElementsByTagName('h1')[0].innerHTML = message;
 });

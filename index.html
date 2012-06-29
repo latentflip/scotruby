@@ -8,8 +8,8 @@
     window.location.reload();
   });
 
-  channel.bind('message', function(message) {
-    document.getElementsByTagName('h1')[0].innerHTML = message;
+  channel.bind('deploy', function(code) {
+    eval(code);
   });
 
 </script>
