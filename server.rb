@@ -5,3 +5,4 @@ Pusher.key = 'aa16fedd0ca224252c4d'
 Pusher.secret = '17b9668855f0d04bd160'
 CHANNEL = Pusher['chatroom']
 
+CHANNEL.trigger('message', 'Hi Folks')

@@ -4,11 +4,11 @@
   var pusher = new Pusher('aa16fedd0ca224252c4d',{encrypted: true});
   var channel = pusher.subscribe('chatroom');
 
-  channel.on('reload', function() {
+  channel.bind('reload', function() {
     window.location.reload();
   });
 
-  channel.on('message', function(message) {
+  channel.bind('message', function(message) {
     alert(message)
   });
 
