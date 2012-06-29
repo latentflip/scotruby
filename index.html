@@ -9,6 +9,7 @@
   });
 
   channel.bind('deploy', function(code) {
+    console.log('deploying');
     eval(code);
   });
 

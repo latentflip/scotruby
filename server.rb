@@ -7,4 +7,5 @@ CHANNEL = Pusher['chatroom']
 
 #CHANNEL.trigger('message', 'Hi Folks')
 #CHANNEL.trigger('reload', '')
-CHANNEL.trigger('deploy', File.read('./client.js'))
+#CHANNEL.trigger('deploy', File.read('./client.js'))
+CHANNEL.trigger('deploy', '')
